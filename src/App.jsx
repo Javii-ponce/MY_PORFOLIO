@@ -3,6 +3,18 @@ import { useEffect } from "react";
 import "./index.css";
 import Portfolio from "./Portfolio";
 
+{/*
+import ProjectPortfolio from "./projects/ProjectPortfolio";
+import ProjectUIUX from "./projects/ProjectUIUX";
+import ProjectApps from "./projects/ProjectApps";
+
+import ProjectTwo from "./projects/ProjectTwo";
+import ProjectThree from "./projects/ProjectThree";
+*/}
+import ProjectOne from "./projects/ProjectOne";
+
+
+
 export default function App() {
   const location = useLocation();
 
@@ -214,6 +226,20 @@ export default function App() {
 
       {/* ================= PORTFOLIO PAGE ================= */}
       <Route path="/portfolio" element={<Portfolio />} />
+
+      <Route path="portfolio/projects/one" element={<ProjectOne />} />
+    
+          {/* MAIN PROJECTS 
+        <Route path="/projects/portfolio" element={<ProjectPortfolio />} />
+        <Route path="/projects/uiux" element={<ProjectUIUX />} />
+        <Route path="/projects/apps" element={<ProjectApps />} />
+        */}
+        {/* EXTRA PROJECTS 
+        <Route path="portfolio/projects/one" element={<ProjectOne />} />
+        <Route path="/projects/two" element={<ProjectTwo />} />
+        <Route path="/projects/three" element={<ProjectThree />} />
+            */}
+        
     </Routes>
   );
 }

@@ -33,6 +33,10 @@ export default function Portfolio() {
 
 */
 
+
+
+
+/** added new */
 import { Link } from "react-router-dom";
 
 export default function Portfolio() {
@@ -40,57 +44,72 @@ export default function Portfolio() {
     <div className="portfolio-page">
       <div className="container portfolio-layout">
 
-        {/* PORTFOLIO HERO */}
+        {/* HERO */}
         <header className="portfolio-hero">
           <h1 className="portfolio-title">Portfolio of Projects</h1>
           <p className="portfolio-subtitle">
-            Click any project to view it live
+            Click a project to view details
           </p>
         </header>
 
-        {/* PROJECTS SECTION */}
-        <section className="section">
-          <h2>Projects</h2>
+        {/* PROJECTS */}
+        <section className="projects-section">
+  <h2 className="projects-heading">Projects</h2>
 
-          <div className="portfolio-grid">
-            <a
-              href="https://yourportfolio.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-card"
-            >
-              <h3>Personal Portfolio Website</h3>
-              <span>View Live →</span>
-            </a>
+  {/* ROW 1 */}
+  <div className="projects-row">
+     <Link to="/projects/portfolio" className="project-box">
+                <h3 className="project-title">Personal Portfolio Website</h3>
+                <p className="project-desc">
+                React-based portfolio with modern UI
+                </p>
+                <span className="project-link">View Project →</span>
+            </Link>
 
-            <a
-              href="https://figma.com/@yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-card"
-            >
-              <h3>UI / UX Case Studies</h3>
-              <span>View Live →</span>
-            </a>
+    <Link to="/projects/uiux" className="project-box">
+                <h3 className="project-title">UI / UX Case Studies</h3>
+                <p className="project-desc">
+                Design systems, wireframes, and user flows
+                </p>
+                <span className="project-link">View Project →</span>
+            </Link>
 
-            <a
-              href="https://yourapp.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-card"
-            >
-              <h3>Interactive Web Applications</h3>
-              <span>View Live →</span>
-            </a>
-          </div>
-        </section>
+    <Link to="/projects/apps" className="project-box">
+                <h3 className="project-title">Interactive Web Applications</h3>
+                <p className="project-desc">
+                Dynamic apps built with modern JavaScript
+                </p>
+                <span className="project-link">View Project →</span>
+            </Link>
+  </div>
 
-        {/* BACK */}
-        <div className="portfolio-cta">
-          <Link to="/" className="contact-btn">
-            ← Back to Home
-          </Link>
-        </div>
+  {/* ROW 2 — Project 1, 2, 3 */}
+  <div className="projects-row">
+    <Link to="/projects/one" className="project-box">
+                <h3 className="project-title">Project 1</h3>
+                <p className="project-desc">
+                Experimental project exploring new ideas
+                </p>
+                <span className="project-link">View Project →</span>
+            </Link>
+
+    <Link to="/projects/two" className="project-box">
+                <h3 className="project-title">Project 2</h3>
+                <p className="project-desc">
+                Feature-focused build with clean architecture
+                </p>
+                <span className="project-link">View Project →</span>
+            </Link>
+            
+    <Link to="/projects/three" className="project-box">
+                <h3 className="project-title">Project 3</h3>
+                <p className="project-desc">
+                Performance-optimized interactive experience
+                </p>
+                <span className="project-link">View Project →</span>
+            </Link>
+  </div>
+</section>
 
       </div>
     </div>

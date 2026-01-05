@@ -16,6 +16,8 @@ import ProjectOne from "./projects/ProjectOne"; {/* THis is the first vertical 2
 import ProjectTwo from "./projects/ProjectTwo";
 import ProjectThree from "./projects/ProjectThree";
 import ProjectFour from "./projects/ProjectFour";
+import ProjectFive from "./projects/ProjectFive";
+import ProjectSix from "./projects/ProjectSix";
 
 
 export default function App() {
@@ -234,6 +236,8 @@ export default function App() {
       <Route path="/projects/two" element={<ProjectTwo />} />
       <Route path="/projects/three" element={<ProjectThree />} />
       <Route path="/projects/four" element={<ProjectFour />} />
+      <Route path="/projects/five" element={<ProjectFive />} />
+      <Route path="/projects/six" element={<ProjectSix />} />
     
           {/* MAIN PROJECTS 
         <Route path="/projects/portfolio" element={<ProjectPortfolio />} />

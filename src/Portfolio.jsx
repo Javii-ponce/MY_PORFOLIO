@@ -99,18 +99,18 @@ export default function Portfolio() {
                 <span className="project-link">View Project →</span>
             </Link>
 
-    <Link to="/projects/uiux" className="project-box">
-                <h3 className="project-title">4</h3>
+    <Link to="/projects/five" className="project-box">
+                <h3 className="project-title">Currently Working On..</h3>
                 <p className="project-desc">
-                Design systems, wireframes, and user flows
+                Working on a Furniture Website
                 </p>
                 <span className="project-link">View Project →</span>
             </Link>
 
-    <Link to="/projects/apps" className="project-box">
-                <h3 className="project-title">5</h3>
+    <Link to="/projects/six" className="project-box">
+                <h3 className="project-title">Upcoming Project..</h3>
                 <p className="project-desc">
-                Dynamic apps built with modern JavaScript
+                Upcoming project., Nothing here yet
                 </p>
                 <span className="project-link">View Project →</span>
             </Link>

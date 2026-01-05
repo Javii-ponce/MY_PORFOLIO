@@ -680,3 +680,71 @@ footer {
 .lightbox-close:hover {
   transform: scale(1.1);
 }
+
+
+/* ---------- MOBILE RESPONSIVENESS ---------- */
+@media (max-width: 768px) {
+  .portfolio-page,
+  .project-page {
+    padding: 24px 16px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+}
+
+
+/* ---------- Making images fir gallery ---------- */
+@media (max-width: 768px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .project-image {
+    border-radius: 14px;
+  }
+}
+
+/* ---------- Making lightbox fit on phones ---------- */
+
+@media (max-width: 768px) {
+  .lightbox-content {
+    max-width: 95vw;
+    max-height: 95vh;
+  }
+
+  .lightbox-image {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+
+  .lightbox-close {
+    top: -10px;
+    right: -10px;
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* make the portfolio project grid */
+@media (max-width: 768px) {
+  .projects-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-box {
+    width: 100%;
+  }
+}

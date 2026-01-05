@@ -1,15 +1,13 @@
+/*import { Link } from "react-router-dom";
 
 
-/**import { Link } from "react-router-dom";
-
-
-export default function ProjectOne() {
+export default function ProjectThree() {
   return (
     <div className="project-page">
-      <h1>Project 1</h1>
+      <h1>Project 3</h1>
       <p>Experimental project exploring new ideas.</p>
 
-      <h3>HELOOOOO</h3>
+      <h3>hey its me</h3>
 
       <Link to="/portfolio">← Back to Portfolio</Link>
     </div>
@@ -17,14 +15,17 @@ export default function ProjectOne() {
 }
 */
 
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
 
-export default function ProjectOne() {
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+export default function ProjectThree() {
   const images = [
-    "/figmaDatingApp3.png",
-    "/figmaDatingApp-2.png",
-    "/prototype.png",
+    "/chess1.png",
+    "/chess2Light.png",
+    "/chess3.png",
+    "/chess4.png",
+    "/chess5.png",
   ];
 
   const [activeImage, setActiveImage] = useState(null);
@@ -40,11 +41,17 @@ export default function ProjectOne() {
 
   return (
     <div className="project-page">
-      <h1>Figma Dating App</h1>
+      <h1>Chess Game</h1>
 
       <p className="project-description">
-        This is a dating appication that I worked with alongside another girl. Panchi is a modern dating application designed in Figma.
-        Includes onboarding, matching, subscriptions, and light/dark mode flows.
+
+        Chess is a classic board game that has been played for centuries but learning it and improving can be 
+        challenging especially for beginners. Our project aims to create a modern, easy to use and enjoyable version 
+        of a classical game which can be enjoyed by everyone from complete beginner to experienced players. The game will provide a clear 
+        and simple interface with clean visuals and responsive game-play and also provide some additional tools to help users learn, play and analyze games. Players will be
+        able to enjoy the game alone, with friends or test their skill level with different levels of AI players.
+
+        -I worked on the hint of the application, also front-end of the application.
       </p>
 
       {/* IMAGE GRID */}

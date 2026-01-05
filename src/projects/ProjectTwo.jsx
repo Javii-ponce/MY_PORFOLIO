@@ -1,15 +1,13 @@
+/*
+import { Link } from "react-router-dom";
 
 
-/**import { Link } from "react-router-dom";
-
-
-export default function ProjectOne() {
+export default function ProjectTwo() {
   return (
     <div className="project-page">
-      <h1>Project 1</h1>
+      <h1>Project 2</h1>
       <p>Experimental project exploring new ideas.</p>
 
-      <h3>HELOOOOO</h3>
 
       <Link to="/portfolio">← Back to Portfolio</Link>
     </div>
@@ -17,14 +15,15 @@ export default function ProjectOne() {
 }
 */
 
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
 
-export default function ProjectOne() {
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+export default function ProjectTwo() {
   const images = [
-    "/figmaDatingApp3.png",
-    "/figmaDatingApp-2.png",
-    "/prototype.png",
+    "/ITCompany1.png",
+    "/ITCompany22.png",
+    "/ITCompany3.png",
   ];
 
   const [activeImage, setActiveImage] = useState(null);
@@ -40,11 +39,11 @@ export default function ProjectOne() {
 
   return (
     <div className="project-page">
-      <h1>Figma Dating App</h1>
+      <h1>Greenfield International Technologies Inc</h1>
 
       <p className="project-description">
-        This is a dating appication that I worked with alongside another girl. Panchi is a modern dating application designed in Figma.
-        Includes onboarding, matching, subscriptions, and light/dark mode flows.
+        This is a Webiste application for a company in which wanted a new update to there exsiting webiste. I worked on this webiste application in the 
+        UI/UX side with one other person.
       </p>
 
       {/* IMAGE GRID */}

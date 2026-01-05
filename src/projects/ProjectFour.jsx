@@ -19,15 +19,11 @@ export default function ProjectThree() {
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function ProjectThree() {
+export default function ProjectFour() {
   const images = [
-    "/chess1.png",
-    "/chess2Light.png",
-    "/chess3.png",
-    "/chess4.png",
-    "/chess5.png",
-    "/UIChess1.png",
-    "/UIChess2.png",
+    "/imageviewer1.png",
+    "/imageviewer2.png",
+    "/imageviewer3.png",
   ];
 
   const [activeImage, setActiveImage] = useState(null);
@@ -43,17 +39,14 @@ export default function ProjectThree() {
 
   return (
     <div className="project-page">
-      <h1>Chess Game</h1>
+      <h1>Image Viewer</h1>
 
       <p className="project-description">
 
-        Chess is a classic board game that has been played for centuries but learning it and improving can be 
-        challenging especially for beginners. Our project aims to create a modern, easy to use and enjoyable version 
-        of a classical game which can be enjoyed by everyone from complete beginner to experienced players. The game will provide a clear 
-        and simple interface with clean visuals and responsive game-play and also provide some additional tools to help users learn, play and analyze games. Players will be
-        able to enjoy the game alone, with friends or test their skill level with different levels of AI players.
-
-        -I worked on the hint of the application, also front-end of the application.
+        A simple image viewer that lets users browse folders to find images, view them, make basic edits like adjusting
+        brightness, zooming, and cropping, and save the edited images. The app includes an easy-to-use menu and a help section 
+        so users can quickly understand how everything works. It is designed to be straightforward, user-friendly, and practical 
+        for everyday image viewing and editing.
       </p>
 
       {/* IMAGE GRID */}

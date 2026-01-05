@@ -15,6 +15,7 @@ import ProjectThree from "./projects/ProjectThree";
 import ProjectOne from "./projects/ProjectOne"; {/* THis is the first vertical 2nd one */}
 import ProjectTwo from "./projects/ProjectTwo";
 import ProjectThree from "./projects/ProjectThree";
+import ProjectFour from "./projects/ProjectFour";
 
 
 export default function App() {
@@ -232,6 +233,7 @@ export default function App() {
       <Route path="/projects/one" element={<ProjectOne />} />
       <Route path="/projects/two" element={<ProjectTwo />} />
       <Route path="/projects/three" element={<ProjectThree />} />
+      <Route path="/projects/four" element={<ProjectFour />} />
     
           {/* MAIN PROJECTS 
         <Route path="/projects/portfolio" element={<ProjectPortfolio />} />

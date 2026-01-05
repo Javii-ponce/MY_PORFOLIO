@@ -80,7 +80,7 @@ export default function Portfolio() {
     <Link to="/projects/three" className="project-box">
                 <h3 className="project-title">ChessGame Project 3</h3>
                 <p className="project-desc">
-                A modern chess game with interactive play, adjustable AI difficulty, 
+                A modern chess game with interactive play, adjustable AI difficulty,
                 save/load features, and beginner-friendly tutorials.
                 </p>
                 <span className="project-link">View Project →</span>
@@ -88,14 +88,13 @@ export default function Portfolio() {
   </div>
 
 
-
-
   {/* ROW 1 */}
   <div className="projects-row">
-     <Link to="/projects/portfolio" className="project-box">
-                <h3 className="project-title">3</h3>
+     <Link to="/projects/four" className="project-box">
+                <h3 className="project-title">Image Viewer</h3>
                 <p className="project-desc">
-                React-based portfolio with modern UI
+                An image viewer similar to how images are edited on a phone, features: brightness adjustment,
+                zoom, crop tools and editing.
                 </p>
                 <span className="project-link">View Project →</span>
             </Link>

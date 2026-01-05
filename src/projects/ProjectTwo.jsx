@@ -24,6 +24,9 @@ export default function ProjectTwo() {
     "/ITCompany1.png",
     "/ITCompany22.png",
     "/ITCompany3.png",
+    "/GF.png",
+    "/GF2.png",
+    "/GF3.png",
   ];
 
   const [activeImage, setActiveImage] = useState(null);
@@ -44,6 +47,8 @@ export default function ProjectTwo() {
       <p className="project-description">
         This is a Webiste application for a company in which wanted a new update to there exsiting webiste. I worked on this webiste application in the 
         UI/UX side with one other person.
+        - The design changed once we developed the thrid phase of what the application would really look like, I didnt add those images but 
+        here you have a phase 2 of the design with the final product.
       </p>
 
       {/* IMAGE GRID */}

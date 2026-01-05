@@ -164,20 +164,45 @@ h2 {
 }
 
 /* Contact */
+/* ===============================
+   RESPONSIVE CONTACT SECTION
+================================ */
+
+/* Base contact layout (desktop & tablet) */
 .contact-info {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
+  flex-wrap: wrap;           /* 🔥 allows wrapping on small screens */
+  text-align: center;
 }
 
+/* Contact buttons */
 .contact-btn {
-  padding: 15px 40px;
+  padding: 14px 36px;
   border-radius: 50px;
   background: linear-gradient(135deg, #ff1493, #ff69b4);
   color: white;
   text-decoration: none;
   font-weight: 600;
+  white-space: nowrap;       /* 🔥 prevents text breaking badly */
 }
+
+/* -------- MOBILE FIX -------- */
+@media (max-width: 600px) {
+  .contact-info {
+    flex-direction: column;  /* 🔥 stack buttons vertically */
+    gap: 14px;
+  }
+
+  .contact-btn {
+    width: 100%;             /* 🔥 full-width buttons on phone */
+    max-width: 320px;
+    text-align: center;
+  }
+}
+
 
 /* Footer */
 footer {
@@ -746,5 +771,106 @@ footer {
 
   .project-box {
     width: 100%;
+  }
+}
+
+
+/* ---------- GLOBAL RESET & RESPONSIVE BASE ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ---------- GLOBAL fluid spacing anf max width ---------- */
+.container,
+.portfolio-page,
+.project-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(16px, 4vw, 48px);
+}
+
+/* ---------- GLOBAL typography scal on all devices  ---------- */
+h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+}
+
+p {
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  line-height: 1.7;
+}
+
+/* ---------- GLOBAL responsive rule  ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---------- GLOBAL project gallery reponsive  ---------- */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(16px, 3vw, 32px);
+}
+
+/* GLOBAL make project cards responsive everywhere */
+.project-box {
+  padding: 24px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+
+/* GLOBAL Make the lightbox responsive on ALL devices */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.lightbox-content {
+  max-width: min(95vw, 1200px);
+  max-height: 95vh;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+/* GLOBAL media query for small phones */
+@media (max-width: 480px) {
+  .project-description {
+    font-size: 0.95rem;
+  }
+
+  .lightbox-close {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
   }
 }
